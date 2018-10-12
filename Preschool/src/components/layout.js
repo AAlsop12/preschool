@@ -17,7 +17,7 @@ class Layout extends Component {
   render() {
     return (
       <div className='layout'>
-        <Header />
+        {/* <Header /> */}
         <Navbar />
         <Account />
         <Button />

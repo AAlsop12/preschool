@@ -12,41 +12,53 @@ class Account extends Component {
     componentDidMount() {
         
 
-        const headerLinks = [
-            {
-                _id: 0,
-                title: 'Logout',
-                path: '/signin'
-            },
-            {
-                _id: 1,
-                title: 'Sign Up',
-                path: '/signup'
-            }
-        ]
+        // const headerLinks = [
+        //     {
+        //         _id: 0,
+        //         title: 'Logout',
+        //         path: '/signin'
+        //     },
+        //     {
+        //         _id: 1,
+        //         title: 'Sign Up',
+        //         path: '/signup'
+        //     }
+        // ]
 
         const navbarLinks = [
             {
                 _id: 0,
-                title: 'About Me',
+                title: 'About Us',
                 active: false,
                 path: '/about'
             },
             {
-                _id: 1,
-                title: 'Experience',
+                _id: 0,
+                title: 'Meet the Teachers',
                 active: false,
                 path: './experience'
             },
             {
+                _id: 1,
+                title: 'Tuition Costs',
+                active: false,
+                // path: './experience'
+            },
+            {
+                _id: 1,
+                title: 'Tuition Costs',
+                active: false,
+                // path: './experience'
+            },
+            {
                 _id: 2,
-                title: 'Goals',
+                title: 'Calendar',
                 active: false,
                 path: '/goals'
             },
             {
                 _id: 3,
-                title: 'Portfolio',
+                title: 'Photo Album',
                 active: false,
                 path: '/portfolio'
             },
@@ -64,7 +76,7 @@ class Account extends Component {
 
         ]
 
-        this.props.setHeaderLinks(headerLinks);
+        // this.props.setHeaderLinks(headerLinks);
         this.props.setNavbarLinks(navbarLinks);
     }
 
