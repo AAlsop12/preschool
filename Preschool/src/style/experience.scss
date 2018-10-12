@@ -1,0 +1,97 @@
+.action { 
+    transition: all .3s ease;
+}
+
+
+.resume {
+    grid-row: content-s/content-e;
+    grid-column: content-s/content-e;
+    background-color: rgba(white, .4);
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,0.2);
+    
+}
+
+.experience {
+    min-height: 35px;
+    transition: all .4s ease;
+    padding: 20px;
+    font-size: 24px;
+    list-style: none;
+    align-self: center;
+    border-radius: 5px;
+
+    &__description-infoOne {
+        padding: 15px;
+    }
+
+    &__description-infoTwo {
+        padding: 15px;
+    }
+}
+
+.experience:hover {
+    background-color: white;    
+    box-shadow: 0 2px 10px 0 rgba(0,0,0,0.21);
+    transition: all .4s ease;
+    .action {
+        opacity: 1;
+    }
+}
+
+.experience__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    
+}
+
+.experience__arrow {
+    transition: all .3s ease;
+}
+
+
+
+.experience__arrow-close {
+    transition: all .3s ease;
+    transform: rotate(180deg);
+}
+
+.experience__header {
+    align-content: center;
+    font-weight: bolder;
+}
+.experience__header-container {
+    width: 85%;
+    display: flex;
+    justify-content: left;
+    align-self: center;
+    
+}
+
+.experience__selected {
+    background-color: white;
+    box-shadow: 0 2px 10px 0 rgba(0,0,0,0.21);
+}
+
+
+
+
+
+@mixin position-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.resume {
+    overflow-y: scroll;
+    height: 600px;
+}
+
+.experience__title {
+    font-weight: bold;
+}

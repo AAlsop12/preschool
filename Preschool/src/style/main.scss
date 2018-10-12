@@ -1,0 +1,35 @@
+
+html {
+    font-size: 62.5%;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Gruppo', cursive;
+    color: darkolivegreen;
+    background: url('https://lh3.googleusercontent.com/JzqifoKb9ekxdnKMvtL11NKH80DUP3EXR1weXopPEuMluBsRJyGdC6tWEXCm0W6HBiJrtAboZRFNa84ZF5fafIC9i0b4Gl72hZoHSi_kCmte1qHVSK7cwMBudjmlD8DqXIR3yNaIlA=w2400');
+    
+}
+
+@import 'layout';
+@import 'headernavbar';
+@import 'auth/signin';
+@import 'auth/signup';
+@import 'page-title';
+@import 'contact';
+@import 'form-fields';
+@import 'details';
+@import 'button';
+@import 'experience';
+@import 'about';
+@import 'welcome';
+@import 'quote';
+@import 'portfolio/project';
+@import 'goals';
