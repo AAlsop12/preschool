@@ -1,8 +1,7 @@
 .welcome-shell {
     display: grid;
-    grid-template-rows: [s welcome-s] 300px [quote-s] 30px [quote-e] 300px [welcome-e e];
-    grid-template-columns: [s welcome-s quote-s] 1fr [welcome-e] 1000px [quote-e];
-    transform: translateY(-40px);
+    grid-template-rows: [s welcome-s] 200px [logo-s] 200px [logo-e quote-s] 30px [quote-e] 300px [welcome-e e];
+    grid-template-columns: [s welcome-s] 1fr [welcome-e quote-s] 1000px [quote-e];
 
     &__quote-shell {
         grid-row: quote-s/welcome-e;
@@ -15,9 +14,10 @@
 .welcome {
 
     grid-row: welcome-s/welcome-e;
-    grid-column: welcome-s/welcome-e;
+    grid-column: welcome-s/content-s;
+    transition: 1s ease;
 
-    animation: 1s ease-out 0s 1 slideInFromLeft;
+    animation: 1s ease 0s 1 slideInFromLeft ;
     @keyframes slideInFromLeft {
         0% {
           transform: translateX(-50%);
@@ -27,7 +27,7 @@
         }
       }
 
-    background-color: rgba(#001a00, .8);
+    background-color: rgba(#330000, .8);
     padding: 15px;
     border-radius: 5px;
     box-shadow: 0 2px 6px 0 rgba(0,0,0,0.2);
@@ -47,7 +47,7 @@
         margin-top: 30px;
         font-size: 48px;
         padding: 10px;
-        justify-self: center;
+        justify-self: end;
     }
     &__greeting {
         grid-row: greeting-s/greeting-e;
@@ -59,8 +59,7 @@
     &__instructions {
         grid-row: instructions-s/instructions-e;
         grid-column: s/e;
-        font-family: 'Gruppo', cursive;
-        font-size: 18px;
+        font-size: 24px;
         justify-self: center;
         
     }
@@ -69,14 +68,14 @@
         grid-column: s/e;
         font-size: 50px;
         weight: 10;
-        justify-self: center;
+        justify-self: right;
     }
     &__aimee-pic {
         grid-row: picture-s/picture-e;
         grid-column: s/e;
         justify-self: center;
         align-self: center;
-        transform: translateY(20px);
+        transform: translateY(60px);
         border-radius: 100px;
         box-shadow: 0 2px 6px 0 rgba(0,0,1,0.5);
 
@@ -86,15 +85,29 @@
 }
 
 
+.logo {
+    grid-row: logo-s/logo-e;
+    grid-column: quote-s/quote-e;
+    font-size: 100px;
+    justify-self: center;
+    transform: translateX(250px);
+    font-family: 'Skranji', cursive;
+    // font-family: 'Love Ya Like A Sister', cursive;
+    // background-color: rgba(white, .4);
+    text-shadow: 2px 2px #330000;
 
+
+
+}
 
 .icon {
     font-size: 100px;
 }
 
-// .welcome-hidden {
-//     transform: translateX(520px)
-// }
+.welcome-hidden {
+    transform: translateX(-320px);
+    transition: 1s ease;
+}
 
 .welcome__arrow:hover {
     transform: translateY(-1px);
@@ -111,3 +124,7 @@
     outline: 0;
 }
 
+.stick-kids {
+    grid-row: quote-s/quote-e;
+    grid-column: quote-s/quote-e;
+}

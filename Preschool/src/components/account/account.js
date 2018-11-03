@@ -12,58 +12,46 @@ class Account extends Component {
     componentDidMount() {
         
 
-        // const headerLinks = [
-        //     {
-        //         _id: 0,
-        //         title: 'Logout',
-        //         path: '/signin'
-        //     },
-        //     {
-        //         _id: 1,
-        //         title: 'Sign Up',
-        //         path: '/signup'
-        //     }
-        // ]
-
         const navbarLinks = [
             {
-                _id: 0,
-                title: 'About Us',
+                _id: 6,
+                title: 'Home',
                 active: false,
-                path: '/about'
+                path: '/welcome'
             },
             {
                 _id: 0,
                 title: 'Meet the Teachers',
                 active: false,
-                path: './experience'
+                path: './about'
             },
             {
                 _id: 1,
-                title: 'Tuition Costs',
-                active: false,
-                // path: './experience'
-            },
-            {
-                _id: 1,
-                title: 'Tuition Costs',
+                title: 'About Us',
                 active: false,
                 // path: './experience'
             },
             {
                 _id: 2,
-                title: 'Calendar',
-                active: false,
-                path: '/goals'
-            },
-            {
-                _id: 3,
                 title: 'Photo Album',
                 active: false,
                 path: '/portfolio'
             },
             {
+                _id: 3,
+                title: 'Tuition Costs',
+                active: false,
+                path: './goals'
+            },
+            {
                 _id: 4,
+                title: 'Calendar',
+                active: false,
+                path: '/experience'
+            },
+
+            {
+                _id: 5,
                 title: 'Contact',
                 active: false,
                 path: '/contact'

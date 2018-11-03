@@ -15,7 +15,7 @@
     &__name {
         grid-row: name-s/name-e;
         grid-column: info-s/info-e;
-        font-size: 45px;
+        font-size: 60px;
     }
 
     &__phone {
@@ -30,7 +30,7 @@
         font-size: 36px;
     }
 
-    &__linked-in {
+    &__info {
         grid-row: linked-s/linked-e;
         grid-column: info-s/info-e;
         font-size: 36px;

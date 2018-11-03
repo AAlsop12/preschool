@@ -17,7 +17,7 @@ class Layout extends Component {
   render() {
     return (
       <div className='layout'>
-        {/* <Header /> */}
+        <img className="cottage" src="woodencottage.png" width='55' height='55'></img>
         <Navbar />
         <Account />
         <Button />

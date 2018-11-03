@@ -3,3 +3,9 @@
     grid-template-rows:[header-s] 50px [header-e navbar-s] 60px [navbar-e] 15px [content-s] 600px [content-e];
     grid-template-columns: [s] 0px [welcome-shell-s] 250px [welcome-shell-e content-s] 1fr  [content-e button-s] minmax(20px, 250px) 50px [button-e e];
 }
+
+.cottage {
+    grid-row: header-s/header-e;
+    grid-column: content-s/content-e;
+    justify-self: center;
+}

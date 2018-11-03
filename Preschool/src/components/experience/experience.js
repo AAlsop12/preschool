@@ -7,7 +7,7 @@ class Experience extends Component {
     render() {
         return (
             <div className='resume'>
-                <PageTitle className='experience__title' title='Experience'/>  
+                <PageTitle className='experience__title' title='Calendar'/>  
                 <Dropdown />
             </div>
         )
